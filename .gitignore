@@ -1,0 +1,9 @@
+# Ignore plugin installations and state
+/lazy-lock.json
+/lazy.lua.bak
+/.repro.lua
+
+# Ignore swap and backup files
+*.swp
+*.swo
+undo/
