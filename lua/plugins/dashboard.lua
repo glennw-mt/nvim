@@ -6,11 +6,35 @@ return {
         preset = {
           keys = {
             {
-              icon = "🗃 ",
+              icon = "📂 ",
               key = "f",
               desc = "File Manager (Yazi)",
               action = function()
                 vim.cmd("Yazi")
+              end,
+            },
+            {
+              icon = "🐱 ",
+              key = "l",
+              desc = "LazyVim",
+              action = function()
+                vim.cmd("Lazy")
+              end,
+            },
+            {
+              icon = "😼 ",
+              key = "x",
+              desc = "LazyVim Extras",
+              action = function()
+                vim.cmd("LazyExtras")
+              end,
+            },
+            {
+              icon = "🔧 ",
+              key = "c",
+              desc = "Config",
+              action = function()
+                Snacks.dashboard.pick("files", { cwd = vim.fn.stdpath("config") })
               end,
             },
             {
