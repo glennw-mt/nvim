@@ -1,5 +1,28 @@
 return {
   {
+    "folke/which-key.nvim",
+    opts = {
+      win = {
+        border = "single",
+      },
+    },
+  },
+  {
+    "folke/noice.nvim",
+    opts = {
+      cmdline = {
+        view = "cmdline_popup", -- or "cmdline_popup"
+      },
+      views = {
+        cmdline_popup = {
+          border = {
+            style = "single", -- try "none", "single", "double"
+          },
+        },
+      },
+    },
+  },
+  {
     "folke/snacks.nvim",
     opts = function(_, opts)
       opts.dashboard = vim.tbl_deep_extend("force", opts.dashboard or {}, {
